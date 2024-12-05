@@ -9,16 +9,12 @@ fun main() {
 
     println("---Solucion v2---")
     if (numbers.size > 1) {
-        var currentIndex = 1;
+        var currentIndex = 1
         for (index in 1 until numbers.size) {
             var previusIndex = index - 1
-            print("a= ${numbers[previusIndex]} ")
-            print("b= ${numbers[index]} ")
             if (numbers[previusIndex] != numbers[index]) {
                 numbers[currentIndex] = numbers[index]
-                println("major number= ${numbers[index]}")
                 currentIndex++
-                println("CurrentIndex = ${(currentIndex)}")
             }
         }
 
