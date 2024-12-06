@@ -74,7 +74,7 @@ private fun functionalGetSquearesOfOddNumbers() {
     //2. Transformar cada numero al cuadrado
     val numbers = listOf<Int>(1, 2, 3, 4, 5)
 //    val resultNumbers=numbers.filter { it%2!=0 }.map { it*it }
-    val resultNumbers=numbers.filter { number->number%2!=0 }.map { number->number*number }
+    val resultNumbers = numbers.filter { number -> number % 2 != 0 }.map { number -> number * number }
     println(resultNumbers)
 }
 
@@ -100,7 +100,7 @@ private fun imperativeCalculateStatistics() {
 private fun functionalCalculateStatistics() {
 //    1. Obtener la suma de los elementos del array
 //    2. Obtener el promedio de los elementos del array
-    val numbers= listOf<Int>(10,20,30,40,50)
+    val numbers = listOf<Int>(10, 20, 30, 40, 50)
     val sum = numbers.sum()
     val average = numbers.average()
     println("Sum: $sum, Average: $average")
