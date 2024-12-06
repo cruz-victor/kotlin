@@ -2,6 +2,13 @@ package functions
 
 fun main() {
     val numbers = listOf<Int>(1, 2, 3, 4, 5)
+
+    println("---Solucion tradicional---")
+    println(operationDouble(numbers))
+    println(opeartionTriple(numbers))
+    println(operationSquare(numbers))
+
+    println("---Solucion con funciones de orden superior ---")
 //    println(processNumbers(numbers, { it * 2 }))
 //    println(processNumbers(numbers, { it * 3 }))
 //    println(processNumbers(numbers, { it * it }))
