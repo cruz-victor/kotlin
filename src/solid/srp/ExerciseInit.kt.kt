@@ -1,4 +1,4 @@
 package solid.srp
 
-class `ExerciseInit.kt` {
-}
+//class ExerciseInit.kt {
+//}
