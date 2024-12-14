@@ -1,18 +1,25 @@
 package solid.srp
 
 class BankAccount(var balance: Double) {
-    fun depositMoney(money:Double) {
-        if (money>0){
-            balance+=money
+    fun depositMoney(money: Double) {
+        if (money > 0) {
+            balance += money
         }
     }
 
-    fun withdrawMoney(money:Double): Boolean {
-        if (money<=balance){
-            balance-=money
-            return true
-        }else{
-            return false
+    fun withdrawMoney(money: Double): Boolean {
+//        if (money <= balance) {
+//            balance -= money
+//            return true
+//        } else {
+//            return false
+//        }
+
+        return if (money <= balance) {
+            balance -= money
+            true
+        } else {
+            false
         }
     }
 
@@ -21,8 +28,8 @@ class BankAccount(var balance: Double) {
     }
 }
 
-fun main(){
-    val bank=BankAccount(1000.00)
+fun main() {
+    val bank = BankAccount(1000.00)
     bank.showBalance()
 
     bank.depositMoney(50.00)
