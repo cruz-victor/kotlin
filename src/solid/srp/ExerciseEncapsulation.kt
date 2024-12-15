@@ -8,13 +8,6 @@ class BankAccount(var balance: Double) {
     }
 
     fun withdrawMoney(money: Double): Boolean {
-//        if (money <= balance) {
-//            balance -= money
-//            return true
-//        } else {
-//            return false
-//        }
-
         return if (money <= balance) {
             balance -= money
             true

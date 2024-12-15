@@ -5,23 +5,6 @@ class Person3 {
     private var _age: Int = 0
     private var _gender: String = "X"
 
-    //    var name: String
-//        get() = this._name
-//        set(value) {
-//            this._name = if (value.isNotBlank()) value else {
-//                println("El nombre no puede estar vacío. Se usará el valor predeterminado.")
-//                "Sin Nombre"
-//            }
-//        }
-//
-//    var age: String
-//        get() = this._name
-//        set(value){
-//            this._age = if (value.toInt() >= 0) value.toInt() else {
-//                println("La edad no puede ser 0")
-//                0
-//            }
-//        }
     var name: String
         get() = this._name
         set(value) {
@@ -29,7 +12,6 @@ class Person3 {
                 this._name = value
             } else {
                 println("El nombre no puede estar vacio. Se usar el valor predeterminado.")
-//                this._name = "Sin nombre"
             }
         }
 
@@ -40,7 +22,6 @@ class Person3 {
                 this._age = value
             } else {
                 println("La edad no puede ser negativa. Se usara el valor predeterminado")
-                this._age = 0
             }
         }
 
@@ -74,5 +55,4 @@ fun main() {
 
     user.gender = "A"
     println("Genero actualizado ${user.gender}")
-
 }
